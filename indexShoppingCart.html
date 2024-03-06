@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="css/styleforfooter.css">
+    <link rel="stylesheet" href="css/ShoppingCart.css">
+    <link rel="stylesheet" href="css/ProductStyles.css">
+    <link rel="stylesheet" href="css/styleforheader.css">
+    <!-- <link rel="stylesheet" href="css/styleforproduct.css"> -->
+
+
+
+    <style>
+        body {
+            margin: 0px;
+        }
+
+        body {
+    margin: 0px;
+}
+
+
+
+        .box11 {
+            display: -webkit-inline-box;
+        }
+
+        .box11 > p > a > img {
+            padding-right: 4px;
+        }
+
+
+        .box {
+            width: 150px;
+            margin-right: 90px;
+            /* background-color: rgb(244, 240, 235); */
+        }
+        .active-menu {
+          border-bottom: 1px solid black;
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+body{
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+}
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+
+    </style>
+
+    <title>Shopping Cart</title> 
+
+
+
+<body>
+
+  <div class="topnav">
+    <a href="logo"><img src="https://cdn.discordapp.com/attachments/1188672500792573958/1214025823498272809/Untitled6_20240304084104.png?ex=65f79ca7&is=65e527a7&hm=0b7106debd94d2033bee7684be1e9611e034230f1b808d63d773cf136de109a2&" 
+      width="75" height="25"></a>
+    <a href="../index/indexHome.html">Home</a>
+    <a href="../index/indexProduct.html">Products</a>
+    <a href="../index/indexAbout.html">About</a>
+    <a href="../index/indexContact.html">Contact</a>
+    <div class="shopping-cart-header">
+      <a href="#"><i class="far fa-envelope"></i></a>
+      <a href="#"><i class='far fa-bell'></i></a>
+      <a class="active-menu" href="../index/indexShoppingCart.html"><i class='fas fa-shopping-cart'></i></a>
+    </div>
+</div>
+    
+<div class="body-shopping-cart">
+
+  <div class="session-one">
+    <div class="shopping-cart">
+        <!-- Title -->
+        <div class="title">
+          Shopping Bag
+        </div>
+       
+        <!-- Product #1 -->
+        <div class="item">
+          <div class="image">
+            <img src="https://m.media-amazon.com/images/I/61uPJ8PZcYL._AC_UY327_FMwebp_QL65_.jpg"
+                 alt="calendar-image" />
+          </div>
+       
+          <div class="description">
+            <span>Name</span>
+            <span>price $</span>
+          </div>
+       
+          <div class = "purchase-info">
+            <input type = "number" min = "0" value = "1">
+          </div>
+       
+          <div class="total-price">$0</div>
+        </div>
+       
+        <!-- Product #2 -->
+        <div class="item">
+            <div class="image">
+                <img src="https://m.media-amazon.com/images/I/91oN-PCNvuL._AC_UY327_FMwebp_QL65_.jpg"
+                     alt="calendar-image" />
+              </div>
+          <div class="description">
+            <span>Name</span>
+            <span>price $</span>
+          </div>
+       
+          <div class = "purchase-info">
+            <input type = "number" min = "0" value = "1">
+          </div>
+       
+          <div class="total-price">$0</div>
+        </div>
+       
+        <!-- Product #3 -->
+        <div class="item">
+            <div class="image">
+                <img src="https://cdn-tp4.mozu.com/27977-44902/cms/44902/files/5730a5b9-65f7-47a2-a2ee-5c8db8f94041?maxWidth=265&_mzcb=_1708635344039"
+                     alt="calendar-image" />
+              </div>
+              
+       
+          <div class="description">
+            <span>Name</span>
+            <span>price $</span>
+          </div>
+       
+          <div class = "purchase-info">
+            <input type = "number" min = "0" value = "1">
+          </div>
+       
+          <div class="total-price">$0</div>
+        </div>
+      </div>
+      
+<!-- ------------------------- -->
+
+      <div class=" Order-Information ">
+        <!-- Title -->
+        <div class="title">
+          Order Information
+        </div>
+       
+
+        <div class="item">
+          <div class="Total-Funds" style="display: flex; color: #5e6977d5; margin: 20px 0px 20px 0px; ">
+              <h4 style="font-family:Arial, Helvetica, sans-serif;">Total-Funds :</h4>
+              <p class="SUM" style="padding-left: 60px;color: red;">$0</p>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="note" style="color: #5e6977d5;">
+            <li>Shipping will be charged at checkout.</li>
+            <li>You can also enter your discount code at checkout.</li>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="pay">
+              <button type = "button" class = "btn" style="width: 223.3px; height: 48px; margin: 0px 0px 0px 50px;">
+                <h2 style="color: rgb(81, 120, 153);">Pay <i class = "fas fa-shopping-cart"></i></h2>
+              </button>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+<div class="add-products">
+  <div class="main-products-line-2">
+    <p class="main-products-line-2-p-strong">Featured calendar</p>
+    <a href="../selling-page/product_calendar_all_page1.html" class="main-products-line-2-moreabout">More about calendar <i class="fa fa-angle-right"></i><i class="fa fa-angle-right"></i></a>
+  </div>
+  <div class="main-products-line-3">
+    <div class="main-products-line-3-box1">
+        <div class="main-products-line-3-box1-minibox">
+          <img src="https://cdn-tp4.mozu.com/27977-44902/cms/44902/files/5730a5b9-65f7-47a2-a2ee-5c8db8f94041?maxWidth=265&_mzcb=_1708635344039" alt="" width="150" height="150">
+          <div class="main-products-line-3-box1-minibox-rate">
+            &#9733;&#9733;&#9733;&#9733;&#9733;<span class="main-products-line-3-box1-minibox-rate-small">(0)</span>
+          </div>
+          <div class="main-products-line-3-box1-minibox-info">
+            <p>National Parks 2024 Wall Calendar</p>
+            <br>
+          </div>
+          <div class="main-products-line-3-box1-minibox-price">
+            <del>120.99$</del>
+            <p>(Save 15%)</p>
+          </div>
+          <div class="main-products-line-3-box1-minibox-price2">
+            <h3>101.99$</h3>
+          </div>
+          <div class="main-products-line-3-box1-minibox-button">
+            <a href="indexProductDetail.html">View details</a>
+          </div>
+        </div>
+      </div>
+      <div class="main-products-line-3-box1">
+        <div class="main-products-line-3-box1-minibox">
+          <img src="https://cdn-tp4.mozu.com/27977-44902/cms/44902/files/5e41fbd6-c4b2-4588-9e93-33faf846517b?maxWidth=265&_mzcb=_1708635344039" alt="" width="150" height="150">
+          <div class="main-products-line-3-box1-minibox-rate">
+            &#9733;&#9733;&#9733;&#9733;&#9733;<span class="main-products-line-3-box1-minibox-rate-small">(0)</span>
+          </div>
+          <div class="main-products-line-3-box1-minibox-info">
+            <p>Tiny Headed Kingdom 2024 Wall Calendar</p>
+            <br>
+          </div>
+          <div class="main-products-line-3-box1-minibox-price">
+            <del>120.99$</del>
+            <p>(Save 15%)</p>
+          </div>
+          <div class="main-products-line-3-box1-minibox-price2">
+            <h3>101.99$</h3>
+          </div>
+          <div class="main-products-line-3-box1-minibox-button">
+            <a href="indexProductDetail.html">View details</a>
+          </div>
+        </div>
+      </div>
+      <div class="main-products-line-3-box1">
+        <div class="main-products-line-3-box1-minibox">
+          <img src="https://cdn-tp4.mozu.com/27977-44902/cms/44902/files/a7f778da-1390-4e0d-a44a-d41d9fb1eae9?maxWidth=265&_mzcb=_1708635344039" alt="" width="150" height="150">
+          <div class="main-products-line-3-box1-minibox-rate">
+            &#9733;&#9733;&#9733;&#9733;&#9733;<span class="main-products-line-3-box1-minibox-rate-small">(0)</span>
+          </div>
+          <div class="main-products-line-3-box1-minibox-info">
+            <p>Wifdlife 2024 Wall Calendar</p>
+            <br>
+          </div>
+          <div class="main-products-line-3-box1-minibox-price">
+            <del>120.99$</del>
+            <p>(Save 15%)</p>
+          </div>
+          <div class="main-products-line-3-box1-minibox-price2">
+            <h3>101.99$</h3>
+          </div>
+          <div class="main-products-line-3-box1-minibox-button">
+            <a href="indexProductDetail.html">View details</a>
+          </div>
+        </div>
+      </div>
+      <div class="main-products-line-3-box1">
+        <div class="main-products-line-3-box1-minibox">
+          <img src="https://cdn-tp4.mozu.com/27977-44902/cms/44902/files/de5a4224-57f0-4329-b97e-a89386dcee7b?maxWidth=265&_mzcb=_1708635344039" alt="" width="150" height="150">
+          <div class="main-products-line-3-box1-minibox-rate">
+            &#9733;&#9733;&#9733;&#9733;&#9733;<span class="main-products-line-3-box1-minibox-rate-small">(0)</span>
+          </div>
+          <div class="main-products-line-3-box1-minibox-info">
+            <p>Dogma 2024 Wall Calendar</p>
+            <br>
+          </div>
+          <div class="main-products-line-3-box1-minibox-price">
+            <del>120.99$</del>
+            <p>(Save 15%)</p>
+          </div>
+          <div class="main-products-line-3-box1-minibox-price2">
+            <h3>101.99$</h3>
+          </div>
+          <div class="main-products-line-3-box1-minibox-button">
+            <a href="indexProductDetail.html">View details</a>
+          </div>
+        </div>
+      </div>
+      <div class="main-products-line-3-box1">
+        <div class="main-products-line-3-box1-minibox">
+          <img src="https://cdn-tp4.mozu.com/27977-44902/cms/44902/files/9bd36045-19ff-4177-a051-f1f9b8ac0e4b?maxWidth=265&_mzcb=_1708635344039" alt="" width="150" height="150">
+          <div class="main-products-line-3-box1-minibox-rate">
+            &#9733;&#9733;&#9733;&#9733;&#9733;<span class="main-products-line-3-box1-minibox-rate-small">(0)</span>
+          </div>
+          <div class="main-products-line-3-box1-minibox-info">
+            <p>Beaches 2024 Wall Calendar</p>
+            <br>
+          </div>
+          <div class="main-products-line-3-box1-minibox-price">
+            <del>120.99$</del>
+            <p>(Save 15%)</p>
+          </div>
+          <div class="main-products-line-3-box1-minibox-price2">
+            <h3>101.99$</h3>
+          </div>
+          <div class="main-products-line-3-box1-minibox-button">
+            <a href="indexProductDetail.html">View details</a>
+          </div>
+        </div>
+      </div>
+      <div class="main-products-line-3-box1">
+        <div class="main-products-line-3-box1-minibox">
+          <img src="https://cdn-tp4.mozu.com/27977-44902/cms/44902/files/7be2dc9e-08aa-45b1-bd88-5f16107f2ac5?maxWidth=265&_mzcb=_1708635344039" alt="" width="150" height="150">
+          <div class="main-products-line-3-box1-minibox-rate">
+            &#9733;&#9733;&#9733;&#9733;&#9733;<span class="main-products-line-3-box1-minibox-rate-small">(0)</span>
+          </div>
+          <div class="main-products-line-3-box1-minibox-info">
+            <p>Baby Blues 2024 Desk Calendar</p>
+            <br>
+          </div>
+          <div class="main-products-line-3-box1-minibox-price">
+            <del>120.99$</del>
+            <p>(Save 15%)</p>
+          </div>
+          <div class="main-products-line-3-box1-minibox-price2">
+            <h3>101.99$</h3>
+          </div>
+          <div class="main-products-line-3-box1-minibox-button">
+            <a href="indexProductDetail.html">View details</a>
+          </div>
+        </div>  
+      </div>
+      
+    </div>
+</div>
+
+      
+
+<hr/>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>company</h4>
+                    <ul>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">our services</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                        <li><a href="#">affiliate program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>get help</h4>
+                    <ul>	
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">shipping</a></li>
+                        <li><a href="#">returns</a></li>
+                        <li><a href="#">order status</a></li>
+                        <li><a href="#">payment options</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>online shop</h4>
+                    <ul>
+                        <li><a href="#">calendars</a></li>
+                        <li><a href="#">diary</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="facebook.com"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </footer>
+    
+</body>
